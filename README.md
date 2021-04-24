@@ -31,3 +31,19 @@ On retrouve les implémentations des repositories de la couche Domain.
 /models => Classe héritant des entités de la couche Domain. Ici on peux lié avec une librairie de Pertistance commme Hive ou SQLFlite...
 
 /datasources => Classe chargés de gérés la communication avec la source de données.
+
+Le projet suis la méthode du TDD, Test Driven Development. Dans cette méthode de travail il convient de créer les tests avant d'implémenter le code source.
+
+Ce processus ce déroule en trois étape : 
+
+1 - Red Phase : Ecrire un test en utilisant des composants qui ne sont pas encore crées.
+
+2 - Green Phase : Implémenter le code source afin que les tests liés soient au vert.
+
+3 - Refactor : Améliorer le code crée tout en gardant le test en vert.
+
+Il faut démarrer le développement de a fonctionnalités par la couche la plus à l'interieur, la couche Domain.
+
+Dans le tuto :
+
+D'abord la définition de l'entité, puis le repositorie pour récupérer les données. Puis le usecase.
