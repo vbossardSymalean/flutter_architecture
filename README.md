@@ -25,7 +25,7 @@ Elle est indépendante de la couche Domain.
 Contient :
 
 /repositories => Le cerveau de la couche Data.
-On retrouve les implémentations des repositories de la couche Domain.
+On retrouve les implémentations des repositories de la couche Domain. Ils retournent des erreurs si nécessaire et les convertissent en Failure.
 
 /models => Classe héritant des entités de la couche Domain. Ici on peux lié avec une librairie de Pertistance commme Hive ou SQLFlite...
 
@@ -51,3 +51,9 @@ D'abord la définition de l'entité, puis le repositorie pour récupérer les do
 
 /fixtures => contient des données de tests representant l'API afin de pouvoir tester meme si l'API n'est pas disponible.
 Il contient aussi un filereader.
+
+CORE
+
+/platform =>
+
+/platform/network_info.dart =>
