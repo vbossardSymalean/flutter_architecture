@@ -25,7 +25,7 @@ Elle est indépendante de la couche Domain.
 Contient :
 
 /repositories => Le cerveau de la couche Data.
-On retrouve les implémentations des repositories de la couche Domain. Ils retournent des erreurs si nécessaire et les convertissent en Failure.
+On retrouve les implémentations des repositories de la couche Domain. Ils retournent des erreurs si nécessaire et les convertissent en Failure. C'est aussi ici que l'on décide si la donnée proviens du cache ou de l'API. Pour decider on vérifie si une connexion existe via la class du core/platform dédié au réseau.
 
 /models => Classe héritant des entités de la couche Domain. Ici on peux lié avec une librairie de Pertistance commme Hive ou SQLFlite...
 
