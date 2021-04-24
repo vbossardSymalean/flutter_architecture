@@ -7,10 +7,9 @@ Chacune contient des repertoires permettant une parfaite sépration des responsa
 PRESENTATION => Contient la vue et le controlleur de l'architecure. C'est ici que se trouve le state management (BLoC / Provider / GetX ...).
 Contient : /pages, /pages, /controller
 
-
 DOMAIN => Contient la logique métier de l'application. Cette couche doit etre parfaitement indépendante des autres couches.
 
-Contient : 
+Contient :
 
 /usecases => La logique métier de l'application.
 Ils communiquent avec les controlleurs et les entités.
@@ -23,7 +22,7 @@ Elles communiquent avec le repositories.
 DATA => C'est la couche d'accès aux données.
 Elle est indépendante de la couche Domain.
 
-Contient : 
+Contient :
 
 /repositories => Le cerveau de la couche Data.
 On retrouve les implémentations des repositories de la couche Domain.
@@ -34,7 +33,9 @@ On retrouve les implémentations des repositories de la couche Domain.
 
 Le projet suis la méthode du TDD, Test Driven Development. Dans cette méthode de travail il convient de créer les tests avant d'implémenter le code source.
 
-Ce processus ce déroule en trois étape : 
+Il est nécessaire d'écrire des tests avant le code pour ce qui concerne la "Logique" de l'application.
+
+Ce processus ce déroule en trois étape :
 
 1 - Red Phase : Ecrire un test en utilisant des composants qui ne sont pas encore crées.
 
@@ -47,3 +48,6 @@ Il faut démarrer le développement de a fonctionnalités par la couche la plus 
 Dans le tuto :
 
 D'abord la définition de l'entité, puis le repositorie pour récupérer les données. Puis le usecase.
+
+/fixtures => contient des données de tests representant l'API afin de pouvoir tester meme si l'API n'est pas disponible.
+Il contient aussi un filereader.
