@@ -54,6 +54,6 @@ Il contient aussi un filereader.
 
 CORE
 
-/platform =>
+/network =>
 
 /platform/network_info.dart =>
