@@ -57,3 +57,6 @@ CORE
 /network =>
 
 /platform/network_info.dart =>
+
+
+// Reprendre vidéo 9 30min.
